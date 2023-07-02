@@ -1,0 +1,56 @@
+.main {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px;
+  }
+  
+  .button {
+    background: #DA1E16;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .text {
+    font: bold 18px/1 poppins;
+    color: #F2F2F2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .progress-bar {
+    position: absolute;
+    height: 10px;
+    width: 0;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 200px;
+    background-color: #ff4d4d;
+  }
+  
+  .svg {
+    width: 30px;
+    position: relative;
+    top: -70%;
+    left: 20%;
+    transform: translateX(-130%);
+  }
+  
+  .check {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  

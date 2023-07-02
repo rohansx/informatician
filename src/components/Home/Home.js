@@ -3,7 +3,6 @@ import ImgSection from "./ImgSection/ImgSection";
 import BkCards from "./BkCards/BkCards";
 import CgCards from "./CgCards/CgCards";
 
-
 export default function Home() {
   return (
     <>
