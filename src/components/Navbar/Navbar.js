@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import { searchBooks } from "../../utils/searchBooks";
 import NavItems from "./NavItems/NavItems.js";
 import "./Navbar.css";
@@ -32,7 +32,11 @@ export default function Navbar(props) {
       className="rounded-t-none  fixed-top box-shadow: 0 4px 6px -1px"
       style={{ background: props.theme === "dark" ? "#001229" : "#eff6ff" }}
     >
+     
       <Link to="/" className="logo">
+        < NavLink 
+        to="/home" className="home-button">
+        </NavLink>
         <img
           loading='lazy'
           src={themeImage}
