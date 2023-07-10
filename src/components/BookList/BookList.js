@@ -45,6 +45,7 @@ export default function BookList(props) {
   }
 
   }
+  const theme= props.theme
 
 /*   useEffect(() => {
     const cardContainer = cardContainerRef.current;
@@ -234,86 +235,126 @@ export default function BookList(props) {
             autoplay={true}
             pagination={{clickable: true,}}
             modules={[Pagination, Navigation, Autoplay]}
-            className="mySwiper slide">
+            className="mySwiper slide"
+            >
 
             <div className="book_card-container" ref={cardContainerRef}>
 
-              <SwiperSlide>
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}>
                 <div className="book_card">
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
-                      <img loading='lazy' className="book_quote_img" src="https://lit216.pbworks.com/f/1363869393/stephen%20king.jpg" alt="Stephen King" />
-                      <h4>- Stephen King</h4>
-                      <p>"If you don't have time to read, you don't have the time to write. Simple as that."</p> 
+                      <div className=" items-center flex flex-col">
+                      <img loading='lazy' className="book_quote_img ring-offset-2 ring-2" src="https://lit216.pbworks.com/f/1363869393/stephen%20king.jpg" alt="Stephen King" />
+                      <h4 style={{}}>- Stephen King</h4>
+                      </div>
+                      <div>
+                      <p style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"If you don't have time to read, you don't have the time to write. Simple as that."</p> 
+                      </div>
                     </div>
                   </div>
               </SwiperSlide>
         
-              <SwiperSlide>
-                <div className="book_card">
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}>
+                <div className="book_card" >
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                  <div className=" items-center flex flex-col">
                       <img loading='lazy' className="book_quote_img" src="http://laurencecoupe.co.uk/wp-content/uploads/2018/01/kerouac-picture.jpg" alt="Jack Kerouac" />
                       <h4>- Jack Kerouac</h4>
-                        <p>"One day I will find the right words, and they will be simple."</p>
+                  </div>
+                  <div>
+                        <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"One day I will find the right words, and they will be simple."</p>
+                  </div>
                     </div>
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide> 
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}> 
                 <div className="book_card">
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                  <div className=" items-center flex flex-col">
                     <img loading='lazy' className="book_quote_img" style={{width:'150px'}}  src="https://media.newyorker.com/photos/59096d586552fa0be682ff3d/master/w_1920,c_limit/Brody-Saul-Bellow-Film-Critic.jpg" alt="Saul Bellow" />
                     <h4>- Saul Bellow</h4>
-                    <p>"You never have to change anything you got up in the middle of the night to write."</p>
+                  </div>
+                    <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"You never have to change anything you got up in the middle of the night to write."</p>
                   </div>
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide>
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}>
                 <div className="book_card">
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                  <div className=" items-center flex flex-col">
                     <img loading='lazy' className="book_quote_img" src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2Fgettyimages-2665140-a1c77ccabe8660fb5123c8b6c5741316.jpg" alt="Aldous Huxley" />
                     <h4>- Aldous Huxley</h4>
-                      <p>"Words can be like X-rays if you use them properly they'll go through anything. You read and you're pierced."</p>
+                  </div>
+                  <div>
+
+                      <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"Words can be like X-rays if you use them properly they'll go through anything. You read and you're pierced."</p>
+                  </div>
                   </div>
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide>
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}>
                 <div className="book_card">
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                  <div className=" items-center flex flex-col">
+                    
                     <img loading='lazy' className="book_quote_img" src="https://media.npr.org/assets/img/2015/03/13/ap070308060493-67009388c842c192821be288e72bbc06977b72ce-s400-c85.webp" alt="Anne Frank" />
                     <h4>- Anne Frank</h4>
-                      <p>"I can shake off everything as I write; my sorrows disappear, my courage is reborn."</p>
+                  </div>
+                  <div>
+
+                      <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"I can shake off everything as I write; my sorrows disappear, my courage is reborn."</p>
+                  </div>
                   </div>
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide> 
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}> 
                 <div className="book_card">
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                  <div className=" items-center flex flex-col">
+
                     <img loading='lazy' className="book_quote_img" src="https://ychef.files.bbci.co.uk/1600x900/p09pxt8c.webp" alt="Sylvia Plath" />
                     <h4>- Sylvia Plath</h4>
-                      <p>"Let me live, love, and say it well in good sentences."</p>       
+                  </div>
+                  <div>
+
+                      <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"Let me live, love, and say it well in good sentences."</p>       
+                  </div>
                   </div>          
                 </div>
             </SwiperSlide>
 
-              <SwiperSlide>
+              <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}>
                 <div className="book_card">
                 <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                  <div className=" items-center flex flex-col">
+
                     <img loading='lazy' className="book_quote_img" src="https://www.theparisreview.org/il/c625e7c0b9/large/JohnSteinbeck-thumb.jpg" alt="John Steinbeck" />
                     <h4>- John Steinbeck</h4>
-                      <p>"Ideas are like rabbits. You get a couple and learn how to handle them, and pretty soon you have a dozen."</p>                
+                  </div>
+                  <div>
+
+                      <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"Ideas are like rabbits. You get a couple and learn how to handle them, and pretty soon you have a dozen."</p>                
+                  </div>
                   </div>           
                 </div>
               </SwiperSlide>
 
-                  <SwiperSlide>
+                  <SwiperSlide style={{backgroundColor: theme === 'dark' ? '#161313' : '#eff6ff',color: theme === 'dark' ? '#1857A0' : "black"}}>
                     <div className="book_card">
                     <div className={`book_card-content ${props.theme === "dark" ? "text-black" : ""}`}>
+                      <div className=" items-center flex flex-col">
+
                         <img loading='lazy' className="book_quote_img" style={{width:'150px'}} src="https://upload.wikimedia.org/wikipedia/en/c/c9/Madeleine_lengle.jpg" alt="Madeleine L'Engle" />
                         <h4>- Madeleine L'Engle</h4>
-                          <p>"You have to write the book that wants to be written & if the book will be too difficult for grown-ups, then you write it for children."</p>             
+                      </div>
+                      <div>
+
+                          <p  style={{color: theme === 'dark' ? '#3c5f81' : "black"}}>"You have to write the book that wants to be written & if the book will be too difficult for grown-ups, then you write it for children."</p>             
+                      </div>
                       </div>
                     </div>
                 </SwiperSlide>

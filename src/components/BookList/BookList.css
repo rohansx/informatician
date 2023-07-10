@@ -9,6 +9,10 @@
   overflow: auto;
   margin-top: 2rem;
 }
+.book_card{
+  height: 100%;
+  align-items: center;
+}
 
 .book-list-heading {
   font-size: 48px;
@@ -170,8 +174,8 @@ form {
 } */
 .book_card img {
  
-  box-shadow: rgba(67, 66, 66, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(67, 66, 66, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -195,11 +199,12 @@ form {
 }
 
 .book_card-content {
-  margin-top: 5px;
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 /* Hide scrollbars */
@@ -302,7 +307,7 @@ form {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 1px 2px 8px 3px lightgray, 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: none !important;
 }
 .slide .swiper-pagination-bullet-active {
   background: #6e7ebc;
