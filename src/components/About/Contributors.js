@@ -59,7 +59,8 @@ function Contributors(props) {
                   rel="noopener noreferrer"
                   href={`https://github.com/${contributor.login}`}
                   aria-label="GitHub"
-                  className="p-2 rounded-md text-gray-900 hover:text-violet-400"
+                  className="p-2 rounded-md hover:text-violet-800"
+                  style={{color:"#3372c1"}}
                 >
                   <img
                     src={contributor.avatar_url}

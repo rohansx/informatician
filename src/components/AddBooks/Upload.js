@@ -39,7 +39,7 @@ const FileUploadComponent = () => {
 
   return (
     <div className="upload p-10 d-flex flex-column justify-content-center align-items-center">
-      <h2 className="fs-2 fw-bolder">Upload Books</h2>
+      <h2 className="fs-2 fw-bolder" style={{color:"#3372c1"}}>Upload Books</h2>
       <div className="upload-box my-5 p-10 d-flex flex-column justify-content-center align-items-center">
         <input
           type="file"

@@ -47,7 +47,7 @@
 .author {
   font-weight: bold;
   margin-top: 15px;
-  color: #7e8ab4;
+  color: #3372c1;
 }
 .author:hover {
   color: #1e7b85;
@@ -56,14 +56,14 @@
 .rating {
   display: flex;
   align-items: center;
-  color: #7e8ab4;
+  color: #3372c1;
 }
 
 .about {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.8;
-  color: #7e8ab4;
+  color: #3372c1;
   margin-right: 30px;
 }
 
