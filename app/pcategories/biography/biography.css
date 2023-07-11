@@ -53,7 +53,6 @@
 
 .show-more-button {
   display: block;
-  margin: 0 auto;
   /* Center align the button */
   background-color: #007bff;
   color: #fff;
@@ -61,7 +60,6 @@
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
-  margin-top: 20px;
   cursor: pointer;
 }
 

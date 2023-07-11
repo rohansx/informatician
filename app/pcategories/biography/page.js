@@ -37,12 +37,14 @@ function Biography(props) {
           </p>
           <BkCards bkhead="Trending titles"></BkCards>
           <BkCards bkhead="Must-Read Biographies of Great Leaders"></BkCards>
+          <div className={`${!showMore && "pt-10"} pb-10`}>
           {showMore && <BkCards bkhead="Everything About Biography & Memoir"></BkCards>}
           {!showMore && (
-            <button className="show-more-button" onClick={handleShowMore}>
+            <button className="show-more-button mx-auto" onClick={handleShowMore}>
               Show More
             </button>
           )}
+          </div>
         </Col>
       </Row>
     </Container>

@@ -1,0 +1,170 @@
+.single-view {
+  margin-top: 150px;
+}
+
+.single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inside-wrapper {
+  box-sizing: border-box;
+  display: grid;
+  column-gap: 24px;
+  min-width: 320px;
+  padding: 0px 24px;
+  width: 100%;
+  grid-template-columns: repeat(10, 1fr);
+  max-width: 1248px;
+}
+
+.left-wrapper-content {
+  grid-column: auto/span 6;
+  position: relative;
+  width: 100%;
+}
+
+.book-name {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 2.5625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.publication {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #16171b;
+  margin-top: 10px;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #7e8ab4;
+}
+.author:hover {
+  color: #1e7b85;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: #7e8ab4;
+}
+
+.about {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #7e8ab4;
+  margin-right: 30px;
+}
+
+.book-info {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.book-info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.book-info h3 {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000;
+}
+
+.space {
+  grid-column: auto/span 1;
+  position: relative;
+  width: 100%;
+}
+
+.side-panel {
+  grid-column: auto/span 2;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 90%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.thumbnail img {
+  visibility: visible;
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #1e7b85;
+  border-radius: 4px;
+  color: #1e7b85;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #2bbdce;
+  color: white;
+}
+
+.btn-start-reading {
+  background-color: #1e7b85;
+  color: white;
+  width: 100%;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 24px 0;
+  color: #596280;
+  font-size: large;
+}
+
+.bookmark div {
+  margin-right: 10px;
+}
+
+.bookmark:hover {
+  cursor: pointer;
+  color: #4c7c88;
+}

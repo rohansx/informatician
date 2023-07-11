@@ -1,19 +1,23 @@
-import { Link } from "react-router-dom";
+'use client'
+import Link from "next/link";
 import "./CardContent.css";
+import Image from "next/image";
+import { SwiperSlide } from "swiper/react";
 
 export default function CardContent(props) {
   return (
-    <>
-      <Link to="/pcategories/biography">
-        <div className="cg-card mx-2 px-3 py-2 h-20 position-relative cursor-pointer border">
-          <div>
-            <p>{props.title}</p>
-          </div>
-
-          <div>
-            <img
-            loading='lazy'
-            className="position-absolute"
+    <SwiperSlide>
+      <Link
+        href="/pcategories/biography"
+        className="cg-card mx-2 px-3 py-2 h-20 relative cursor-pointer border"
+      >
+        <div>
+          <p>{props.title}</p>
+        </div>
+        <div>
+          <Image
+            loading="lazy"
+            className="absolute"
             onDragStart={(e) => {
               e.preventDefault();
               return false;
@@ -21,10 +25,8 @@ export default function CardContent(props) {
             src={props.image}
             alt={props.title}
           />
-          </div>
-          
         </div>
       </Link>
-    </>
+    </SwiperSlide>
   );
 }

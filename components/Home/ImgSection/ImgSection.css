@@ -1,5 +1,5 @@
 .img-section {
-    background-color: #115289f7;
+    background-color: #0c2c46;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 16.10em;
@@ -7,19 +7,15 @@
     object-fit: cover;
 }
 
-.img-black{
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: 16.10em;
-    width: 100%;
-}
-
 .inner {
     color: white;
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
-    min-height: 16.10em;
+    min-height: 40vh;
     position: relative;
+    padding: 5px;
+    margin-top: 15px;
 }
 
 .inner-one{
@@ -36,13 +32,13 @@
 .inner-two{
     left: 0;
     display: block;
-    bottom: -54px;
-    background-image: url(../../../assets/mainPages/start.webp);
+    /* bottom: -54px; */
+    background-image: url(../../../public/assets/mainPages/start.webp);
 }
 
 .inner-content{
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     color: white;
     display: flex;
     flex-flow: column;
@@ -78,7 +74,7 @@
 .last-two{
     right: 0;
     display: block;
-    background-image: url(../../../assets/mainPages/start2.webp);
+    background-image: url(../../../public/assets/mainPages/start2.webp);
 }
 
 .last-one{
@@ -89,7 +85,7 @@
     background-size: cover;
     align-self: flex-end;
     position: absolute;
-    bottom: -56px;
+    /* bottom: -56px; */
 }
 
 @media (max-width: 1150px) {
@@ -119,7 +115,7 @@
     bottom: -171px;
     display: block;
     right: -25px;
-    background-image: url(../../../assets/mainPages/start3.webp);
+    background-image: url(../../../public/assets/mainPages/start3.webp);
 }
 
 .nameAnimation {

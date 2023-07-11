@@ -4,7 +4,7 @@
   height: 183px;
   overflow: hidden;
   position: relative;
-  min-height: 173px;
+  min-height: 200px;
   top: -32px;
   bottom: 0;
   border-radius: 10px 10px 0 0 !important;
@@ -18,7 +18,8 @@
 }
 
 .bk-img img {
-  width: 131px;
+  width: 130px;
+  height: 180px;
   border-radius: 6px !important;
   transition: all 0.8s ease-in-out;
 }
@@ -130,30 +131,28 @@
     padding-bottom: 7px;
     transition: all 0.7s ease-in-out;
   }
-  
+
   .bk-view:hover .bk-details {
     transform: translateY(-10px);
     transition: all 0.8s ease-in-out;
   }
-  
+
   .bk-view:hover .bg-color {
     opacity: 0;
     transition: all 0.8s ease-in-out;
     overflow: hidden;
   }
-  
+
   .bk-view:hover .description {
     display: block;
     transition: all 0.8s ease-in-out;
     opacity: 1;
     transform: translateY(-10px);
-  
   }
   .bk-view:hover .type,
   .bk-view:hover .title,
   .bk-view:hover .author {
     transform: translateY(-10px);
-  
   }
   .bk-view:hover .reviews {
     transform: translateY(-18px);
