@@ -89,28 +89,30 @@ export default function NavItems(props) {
           </Link>
         </li>
 
-        <li>
-          <Link to="/bookmark">
-            <FontAwesomeIcon
-              style={{
-                color: props.theme === "dark" ? "white" : "",
-                height: "24px",
-              }}
-              icon={faBookmark}
-            />
-          </Link>
-        </li>
-        <li>
-          <Link to="/addBooks" className="flex" style={{width: "34px"}}>
-            <img
-              loading='lazy'
-              src="https://img.icons8.com/ios/80/add-book.png"
-              alt="Add Book Icon"
-              className="h-8 mr-3 text-bold  hover:font-bold hover:shadow-md self-center  "
-              style={{ filter: props.theme === "dark" ? "invert(1)" : ""}}
-            />{" "}
-          </Link>
-        </li>
+        <div className="flex items-center">
+          <li>
+            <Link to="/bookmark">
+              <FontAwesomeIcon
+                style={{
+                  color: props.theme === "dark" ? "white" : "",
+                  height: "20px",
+                }}
+                icon={faBookmark}
+              />
+            </Link>
+          </li>
+          <li>
+            <Link to="/addBooks" className="flex" style={{ width: "34px" }}>
+              <img
+                loading="lazy"
+                src="https://img.icons8.com/ios/80/add-book.png"
+                alt="Add Book Icon"
+                className="h-6 mr-2 text-bold  hover:font-bold hover:shadow-md self-center  "
+                style={{ filter: props.theme === "dark" ? "invert(1)" : "" }}
+              />{" "}
+            </Link>
+          </li>
+        </div>
       </ul>
     </div>
   );

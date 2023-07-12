@@ -84,7 +84,7 @@ export default function Navbar(props) {
             handleOptionClick={handleOptionClick}
             theme={props.theme}
           />
-          <button onClick={props.toggleTheme} className="mr-8">
+          <button onClick={props.toggleTheme} className="mr-10">
             {props.theme === "light" ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
