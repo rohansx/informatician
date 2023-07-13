@@ -99,7 +99,7 @@ export default function Download(props){
         <p className="brand-name fw-bold text-uppercase">
           <img loading='lazy' src={themeImage} alt="Informatician logo, a book with a bookmark" className="h-22 w-64  d-inline" /> 
         </p>
-        <h1 className="fw-bolder fs-1">Available For Your Smartphone</h1>
+        <h1 className="heading fw-bolder fs-1">Available For Your Smartphone</h1>
         <p>
           Use Informatician through any web browser, Android, or iOS device.
           Download into the apps for offline access, so whether you’re reading

@@ -16,7 +16,7 @@ import "./Feature.css"
 export default function Feature(props) {
   return (
     <div className="row feature d-flex justify-content-evenly text-center">
-      <h1 className="text-center fw-bold fs-1">Features</h1>
+      <h1 className="heading text-center fw-bold fs-1">Features</h1>
       <p className="text-center mt-4 mb-5">Features We provide</p>
 
       <Carousel showArrows={true} showThumbs={false} className="carousel-container" autoPlay={true} interval={2000} infiniteLoop={true}>

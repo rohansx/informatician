@@ -36,7 +36,7 @@ const About = (props) => {
           </Tilt>
         </div>
         <div className="md:w-1/2 p-3 w-11/12" data-aos="fade-right" data-aos-duration="500">
-          <h1 className="text-5xl mb-6 font-bold">About Us</h1>
+          <h1 className="heading text-5xl mb-6 font-bold">About Us</h1>
           <p className="leading-6">
             Book Listing App connects book lovers, fostering a vibrant community
             of diverse genres. Our mission is to make reading accessible,
