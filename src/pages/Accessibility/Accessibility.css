@@ -1,65 +1,75 @@
 .access {
-    padding: 50px 0;
     background-color: var(--bgLight);
+    padding: 20px;
 }
 
 .access-container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .access-title {
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 40px;
+  margin-top: 80px;
+  color: #4f63c3;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: pulse 1s infinite;
 }
 
 .access-section {
-    margin-bottom: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  animation: fade-in 1s ease;
+}
+
+.access-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .access-section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.access-subsection-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: #555;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .access-content {
-    text-align: justify;
-    line-height: 1.5;
+  color: #777;
+  font-size: 16px;
 }
 
-.access-content p {
-    margin-bottom: 15px;
+.contact-email {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.access-content ul {
-    margin-bottom: 15px;
-    padding-left: 20px;
+.contact-email:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
 
-.access-content ul li {
-    margin-bottom: 5px;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.access-content a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.access-content a:hover {
-    text-decoration: underline;
-}
-
-.access-content .contact-email {
-    font-weight: bold;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
