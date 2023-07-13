@@ -113,6 +113,14 @@
   padding: 15px 20px;
   border-radius: 0.75rem;
 }
+
+.error{
+  color: red;
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: 5px;
+  padding-left: 24px;
+}
 @media screen and (max-width: 1200px) {
   .addbook_main {
     display: flex;
