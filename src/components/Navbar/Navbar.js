@@ -6,6 +6,10 @@ import "./Navbar.css";
 import lightLogo from "../../assets/logos/light_logo.png";
 import darkLogo from "../../assets/logos/dark_logo.png";
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
 function handleSubmit(event) {
   event.preventDefault(); // Prevent the default form submission
   event.target.elements.q.value = "";
@@ -17,6 +21,7 @@ export default function Navbar(props) {
 
   const handleOptionClick = () => {
     setClicked(false);
+    scrollToTop();
   };
   const search = async (e) => {
     try {
@@ -32,7 +37,7 @@ export default function Navbar(props) {
       className="rounded-t-none  fixed-top box-shadow: 0 4px 6px -1px"
       style={{ background: props.theme === "dark" ? "#001229" : "#eff6ff" }}
     >
-      <Link to="/" className="logo">
+      <Link to="/" onClick={scrollToTop} className="logo">
         <img
           loading='lazy'
           src={themeImage}

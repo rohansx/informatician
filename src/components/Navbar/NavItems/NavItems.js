@@ -2,6 +2,11 @@ import "../Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 export default function NavItems(props) {
   return (
     <div style={{}}>
@@ -90,7 +95,7 @@ export default function NavItems(props) {
         </li>
 
         <li>
-          <Link to="/bookmark">
+          <Link to="/bookmark" onClick={scrollToTop}>
             <FontAwesomeIcon
               style={{
                 color: props.theme === "dark" ? "white" : "",
@@ -101,13 +106,18 @@ export default function NavItems(props) {
           </Link>
         </li>
         <li>
-          <Link to="/addBooks" className="flex" style={{width: "34px"}}>
+          <Link
+            to="/addBooks"
+            onClick={scrollToTop}
+            className="flex"
+            style={{ width: "34px" }}
+          >
             <img
-              loading='lazy'
+              loading="lazy"
               src="https://img.icons8.com/ios/80/add-book.png"
               alt="Add Book Icon"
               className="h-8 mr-3 text-bold  hover:font-bold hover:shadow-md self-center  "
-              style={{ filter: props.theme === "dark" ? "invert(1)" : ""}}
+              style={{ filter: props.theme === "dark" ? "invert(1)" : "" }}
             />{" "}
           </Link>
         </li>
