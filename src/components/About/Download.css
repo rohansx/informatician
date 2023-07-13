@@ -2,9 +2,9 @@
 #mobile-image-container {
   z-index: 10;
   perspective: 40px;
-  transition: transform 100ms;
-  padding: 17px 15px;
-  background-color: pink;
+  transition: transform 800ms;
+  padding: 9px 10px;
+  background-color: rgb(193, 121, 145);
   border-radius: 40px;
 }
 
@@ -13,13 +13,18 @@
   transition: transform 0.5s;
 }
 
+.box{
+  transition: 1s ease-in-out;
+}
+
 #mobile-image-container:hover {
-  transform: rotate(-10deg);
+  transform: rotate(-8deg);
+  
 }
 
 #mobile-image-container:hover + .box,
 #mobile-image-container:hover + .box + .box {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .available{
   margin-top: 55px;
@@ -38,11 +43,10 @@
   height: 200px;
   width: 200px;
   position: absolute;
-  background-color: pink;
+  background-color: rgb(233, 67, 123);
   border-radius: 100%;
   z-index: 0;
   opacity: 0.7;
-
   transition: transform 100ms;
 }
 
@@ -63,29 +67,78 @@
 .download .right h1 {
   margin: 30px 0;
 }
-
+/* 
 .download .right button {
   width: 12.5rem;
-  background-color: palevioletred;
-  color: #fff;
   border-radius: 10px;
-  border: 1px solid palevioletred;
+  border: 1px solid rgb(233, 67, 123);
   transition: all 0.3s ease;
+}
+
+.btn1l{
+  background-color: rgb(233, 67, 123);
 }
 
 .download .right button:hover {
   background-color: transparent;
-  color: palevioletred;
+  color: rgb(233, 67, 123);
 }
 
 .download .right button:hover > svg {
-  color: palevioletred;
+  color: rgb(233, 67, 123);
 }
 
 .download .right button .apple {
   font-size: 2rem;
   margin: 0 10px 2px 0;
+} */
+
+.btn1{
+  border: 1px solid rgb(233, 67, 123);
+  transition: all 0.3s ease;
+  background-color: rgb(233, 67, 123);
 }
+
+.btn2{
+  background-color: transparent;
+  color: rgb(233, 67, 123);
+  border: 1px solid rgb(233, 67, 123);
+  transition: all 0.3s ease;
+}
+
+.btn2 >svg {
+  color: rgb(233, 67, 123);
+}
+
+.btn1 >svg {
+  color: white;
+}
+
+/* hover effects on button */
+
+.btn1:hover{
+  background-color: transparent;
+  color: rgb(233, 67, 123);
+
+}
+
+.btn1:hover svg{
+  color: rgb(233, 67, 123);
+}
+
+.btn2:hover{
+  background-color: rgb(233, 67, 123);
+  color: white;
+}
+
+.btn2:hover svg{
+  color: white;
+}
+
+
+
+/* hover effects on button ends */
+
 
 @media screen and (max-width: 767px) {
   .download .right {
